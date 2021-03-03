@@ -1,0 +1,39 @@
+{
+  "name": "kkt-static-server",
+  "version": "1.0.0",
+  "description": "可可兔前端静态资源服务",
+  "main": "./bin/server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "koa": "^2.3.0",
+    "koa-router": "^7.2.1",
+    "koa-send": "3.2.0",
+    "koa2-useragent": "^0.2.6",
+    "minimatch": "^3.0.4",
+    "pm2": "^2.10.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.7.5",
+    "babel-preset-es2015-node5": "^1.1.2",
+    "babel-preset-stage-0": "^6.3.13",
+    "babel-preset-stage-3": "^6.17.0",
+    "babel-register": "^6.4.3",
+    "nodemon": "^1.12.0"
+  },
+  "scripts": {
+    "start": "pm2-docker start bin/server.js",
+    "dev": "nodemon --exec node bin/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "gogs@git.keketour.com:FE-Services/kkt-static-server.git"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
